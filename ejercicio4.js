@@ -9,7 +9,7 @@ function agregarPaciente(listaPacientes, nuevoPaciente){
     if(existe){
         throw new Error ('El paciente ya existe en la lista');
     }
-    //retornar una nueva lista con el nuevo paciente agregado porsiaca
+    //retornar una nueva lista con el nuevo paciente agregado porsiaca blblablabla
     return [...listaPacientes, nuevoPaciente];
 }
 
