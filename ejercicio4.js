@@ -5,6 +5,9 @@ function agregarPaciente(listaPacientes, nuevoPaciente){
     if (typeof nuevoPaciente !== 'object' || !nuevoPaciente.nombre){
         throw new Error ('El nuevo paciente no es un objeto válido o le falta el nombre');
     }
+
+
+    
     const existe = listaPacientes.some(paciente => paciente.nombre === nuevoPaciente.nombre);
     if(existe){
         throw new Error ('El paciente ya existe en la lista');
